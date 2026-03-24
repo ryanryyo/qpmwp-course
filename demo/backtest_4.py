@@ -82,8 +82,8 @@ from backtesting.backtest import Backtest
 # Constants
 # --------------------------------------------------------------------------
 
-PATH_TO_DATA = '...'     # <change this to your path to data>
-SAVE_PATH = '...'        # <change this to your path where you want to store the backtest>
+PATH_TO_DATA = '/Users/ryanyo/Developer/Quantitative Methods for Portfolio Performance/qpmwp-course/data/'     # <change this to your path to data>
+SAVE_PATH = '/Users/ryanyo/Developer/Quantitative Methods for Portfolio Performance/qpmwp-course'        # <change this to your path where you want to store the backtest>
 WIDTH_3Y = 365 * 3       # Notice that we use 365 days bcs the dataset also contains weekends and holidays
 
 
@@ -364,6 +364,7 @@ len(bs.optimization.constraints.ids)
 # --------------------------------------------------------------------------
 
 rebalancing_date = rebdates[0]
+rebalancing_date
 bs.build_selection(rebdate=rebalancing_date)
 bs.build_optimization(rebdate=rebalancing_date)
 
